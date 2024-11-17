@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Interactive Trailer";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline id="background-video">
+            <source src="./videos/part12.mp4" type="video/mp4">
+        </video>
+
+        <div class="choices-overlay">
+            <button class="choice-button" onclick="choosePath('choice1')">Choose Path 1</button>
+            <button class="choice-button" onclick="choosePath('choice2')">Choose Path 2</button>
+        </div>
+    </div>
+
+    <script src="js/site.js"></script>
+</body>
+</html>
