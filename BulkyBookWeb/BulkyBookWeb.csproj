@@ -16,8 +16,4 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.15" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\videos\part1.mp4" />
-  </ItemGroup>
-
 </Project>

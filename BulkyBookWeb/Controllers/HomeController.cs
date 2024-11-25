@@ -34,6 +34,51 @@ namespace BulkyBookWeb.Controllers
             return View();
         }
 
+        public IActionResult Choice3()
+        {
+            return View();
+        }
+
+        public IActionResult Choice4()
+        {
+            return View();
+        }
+
+        public IActionResult Choice5()
+        {
+            return View();
+        }
+
+        public IActionResult Choice6()
+        {
+            return View();
+        }
+
+        public IActionResult Choice7()
+        {
+            return View();
+        }
+
+        public IActionResult Choice8()
+        {
+            return View();
+        }
+
+        public IActionResult Choice9()
+        {
+            return View();
+        }
+
+        public IActionResult Choice10()
+        {
+            return View();
+        }
+
+        public IActionResult Choice11()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

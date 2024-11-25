@@ -13,16 +13,16 @@
 <body>
     <div class="video-container">
         <video id="main-video" autoplay playsinline>
-            <source src="~/videos/part1.mp4" type="video/mp4">
+            <source src="~/videos/video1.mp4" type="video/mp4">
         </video>
 
-        <video id="looping-video" loop muted playsinline style="display: none;">
-            <source src="~/videos/part22.mp4" type="video/mp4">
+        <video id="looping-video" loop playsinline style="display: none;">
+            <source src="~/videos/loop1.mp4" type="video/mp4">
         </video>
 
         <div class="choices-overlay" style="display: none;">
-            <button class="choice-button" onclick="choosePath('')">Next Path 1</button>
-            <button class="choice-button" onclick="choosePath('')">Next Path 2</button>
+            <button class="choice-button" onclick="choosePath('choice2')">Aller vers le mouvement</button>
+            <button class="choice-button" onclick="choosePath('choice3')">Continuer son chemin</button>
         </div>
     </div>
 

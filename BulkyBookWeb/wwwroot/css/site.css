@@ -1,3 +1,4 @@
+/* Full-screen video container */
 .video-container {
     position: fixed;
     top: 0;
@@ -8,6 +9,7 @@
     background-color: black;
 }
 
+/* Video styling */
 video {
     position: absolute;
     top: 0;
@@ -18,24 +20,31 @@ video {
     z-index: 0;
 }
 
+/* Choices overlay container (bottom-left and bottom-right) */
 .choices-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 80%; /* 80% down the page */
+    left: 10%; /* Left button position */
+    right: 10%; /* Right button position */
     z-index: 2;
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
 }
 
+/* Buttons styling */
 .choice-button {
-    padding: 15px 30px;
-    font-size: 20px;
+    margin: auto;
+    padding: 15px 15px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
     border: 2px solid white;
     border-radius: 8px;
+    height: 50px; /* Fixed height for consistency */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -45,3 +54,44 @@ video {
         color: black;
         transform: scale(1.1);
     }
+
+
+/* Centered start button on the index page */
+.start-button-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Black background */
+}
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 3s forwards; /* Fade in animation */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .start-button:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        transform: scale(1.1);
+    }
+
+/* Fade-in animation for the start button */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
